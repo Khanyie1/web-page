@@ -80,61 +80,60 @@ body {
 
     /* places section style */
 
-    .place-content {
+    .place-container {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 4em;
+        justify-content: space-between;
     }
-    
-    .first-place, .place-image, .div-image {
-        flex: 1 50%;
-        padding: 10px;
+
+    .sun-city-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
     
-    .first-place h2 {
-        margin-bottom: 1em;
-    }
-    
-    .place-image img {
+    .place-image {
         flex: 1;
-        max-width: 100%;
+        max-width: 45%;
+        margin-right: .5em;
+        margin-top: 2.5em;
         object-fit: cover;
     }
-
-    /* .suncity-image:nth-of-type(4){
-        order: -1;
-    } */
-
-    .container .place-content .suncity-image {
-        order: -1;
+    
+    .Text {
+        max-width: 45%;
+        margin-right: .5em;
+        margin-top: 1em;
     }
 
-    /* .container .place-content .suncity-image {
-        order: -3;
-    } */
-
-    /* .container .place-content .suncity-image img {
-        order: 1;
-    } */
+    .place-name {
+        font-size: 30px;
+        margin-bottom: 3em;
+    }
+    
+    .soweto-text {
+        margin-top: 1.5em;
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .profile-details {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: left;
     }
 
     .profile-details .full-name {
-        margin-right: 7em;
+        /* margin-right: 7em; */
+        justify-content: center;
     }
 
     .profile-details .profile-image img {
-        max-width: 100%;
-        margin-left: 7em;
+        max-width: 150%;
+        /* margin-left: 7em; */
     }  
     
     /* city section styles */
@@ -155,36 +154,46 @@ body {
         margin-left: auto; 
     }
 
+    .historical-places-section {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
     /* places section style */
 
-    .place-content {
+    .place-container {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 4em;
+        justify-content: space-between;
     }
-    
-    .first-place, .place-image, .div-image {
-        flex: 1 50%;
-        padding: 10px;
+
+    .sun-city-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
     
-    .first-place h2 {
-        margin-bottom: 1em;
+    .place-image {
+        flex: 1;
+        max-width: 45%;
+        margin-right: .5em;
+        margin-top: 2.5em;
     }
     
-    .place-image img {
-        flex:1;
-        max-width: 100%;
-        object-fit: cover;
+    .Text {
+        max-width: 45%;
+        margin-right: .5em;
+        margin-top: 1em;
+    }
+
+    .place-name {
+        font-size: 30px;
+        margin-bottom: 3em;
     }
     
-    .new-town-text {
-        text-align: left;
-    }
-    
-    .suncity-image {
-        order: -1;
+    .soweto-text {
+        margin-top: 1.5em;
     }
 }
 
@@ -206,6 +215,11 @@ body {
         margin-left: 7em;
     }
 
+    .historical-places-section {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
     /* city section style css */
 
     .city-details {
@@ -225,35 +239,38 @@ body {
     }
 
     /* places section style */
-    
-    .place-content {
+    .place-container {
         display: flex;
         flex-wrap: wrap;
-    }
-    
-    .first-place, .place-image, .div-image {
-        flex: 1 50%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .first-place h2 {
-        margin-bottom: 1em;
-    }
-    
-    .place-image img {
-        flex: 1;
-        max-width: 100%;
-        object-fit: cover;
+        margin-bottom: 4em;
     }
 
-    .new-town-text {
-        text-align: left;
+    .sun-city-container {
+        display: flex;
+        justify-content: space-between;
     }
     
-    .suncity-image {
-        order: -1;
+    .place-image {
+        flex: 1;
+        max-width: 170px;
+        object-fit: cover;
+        margin-right: .5em;
+        margin-top: 4.5em;
+    }
+    
+    .Text {
+        max-width: 110px;
+        margin-right: .5em;
+    }
+
+    .place-name {
+        font-size: 30px;
+        margin-bottom: 2em;
+        line-height: 1em;
+    }
+    
+    .soweto-text {
+        margin-top: 1.5em;
     }
 }
 
@@ -284,36 +301,43 @@ body {
     }
     
     .city-details .city-image img {
-        width: 12em;
+        width: 15em;
         height: 9em;
+        object-fit: contain;
     }
     
     .city-details .city-text {
         max-width: 46%;
-        margin-left: 10em;
+        margin-left: 20em;
     }
 
     /* places section style */
-
-    .place-content {
+    .place-container {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .sun-city-container {
+        display: flex;
+        justify-content: space-between;
+    }
     
-    .first-place, .place-image, .div-image {
+    .place-image {
         flex: 1;
         padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .first-place h2 {
-        margin-bottom: 1em;
-    }
-    
-    .place-image img {
-        flex: 1;
-        max-width: 100%;
+        max-width: 200px;
         object-fit: cover;
+        margin-right: .5em;
+        margin-top: 2.5em;
     }
-} 
+    
+    .Text {
+        max-width: 150px;
+        margin-right: .5em;
+    }
+
+    .place-name {
+        font-size: 30px;
+        margin-bottom: 2em;
+    }
+}

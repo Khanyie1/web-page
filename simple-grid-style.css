@@ -6,8 +6,7 @@
 .profile .row {
     display: flex;
     height: 250px;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 
 .row .image img {
@@ -57,6 +56,7 @@
 .flex-images-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .Images {
@@ -76,4 +76,250 @@
     margin: .5em;
     justify-content: space-around;
     flex: 1;
+}
+
+@media screen and (max-width: 576px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row .profile .full-name {
+        justify-content: center;
+    }
+
+    .row .profile .image {
+        width: 50%;
+        object-fit: cover;
+        justify-content: center;
+    }
+
+
+    /* city content styles */
+    .flex-city {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-12-sm {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-12-sm .city-image p {
+        text-align: center;
+    }
+
+    .col-12-sm .city-image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-city-class {
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+    }
+
+    .col-10 {
+        display: flex;
+    }
+
+    /* .col-10 .flex-images-container .Images {
+        
+    } */
+
+    .col-10 .flex-images-container .Soweto-text {
+        margin-right: 2em;
+    }
+
+    .col-10 .flex-images-container .Sun-city-text {
+        margin-left: 2em;
+    } 
+    
+    .col-10 .flex-images-container .New-town-text {
+        margin-right: 2em;
+    }
+
+    .sun-city-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row .profile .full-name {
+        justify-content: center;
+    }
+
+    .row .profile .image {
+        width: 30%;
+        object-fit: cover;
+        justify-content: center;
+    }
+
+    /* city content style */
+    .flex-city {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-12-sm {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-12-sm .city-image p {
+        text-align: center;
+    }
+
+    .col-12-sm .city-image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-city-class {
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+    }
+
+    .sun-city-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    /* place content style */
+    .col-10 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .col-10 .flex-images-container .Soweto-text {
+        margin-right: 2em;
+    }
+
+    .col-10 .flex-images-container .Sun-city-text {
+        margin-left: 2em;
+    } 
+    
+    .col-10 .flex-images-container .New-town-text {
+        margin-right: 2em;
+    }
+
+    .col-12-sm .text {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .city-image p {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .city-image .text{
+        background-color: aqua;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .text-1 {
+        max-width: 160px;
+        margin-right: .5em;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* .col-12 .lang, .lang-text{
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    } */
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .col-10 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .col-10 .sun-city-container {
+        display: flex;
+    }
+
+    .flex-images-container {
+        display: flex;
+    }
+
+    .Images {
+        flex: 1;
+        padding: 10px;
+        max-width: 180px;
+        object-fit: cover;
+        margin-right: .5em;
+        margin-top: 2.5em;
+    }
+
+    .sun-city-container .suncity-image {
+        max-width: 70px;
+    }
+
+    .text {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .text-1 {
+        max-width: 180px;
+        margin-right: .5em;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .col-10 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .col-10 .sun-city-container {
+        display: flex;
+    }
+
+    .flex-images-container {
+        display: flex;
+    }
+
+    .Images {
+        flex: 1;
+        padding: 10px;
+        max-width: 200px;
+        object-fit: cover;
+        margin-right: .5em;
+        margin-top: 2.5em;
+    }
+
+    .text {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .text-1 {
+        max-width: 180px;
+        margin-right: .5em;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
