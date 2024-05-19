@@ -66,9 +66,10 @@
 }
 
 .Images img {
-    max-height: 100%;
-    max-width: 100%;
+    height: 87%;
+    width: 100%;
     margin-top: .5em;
+    object-fit: cover;
 }
 
 .flex-images-container .text {
@@ -126,10 +127,6 @@
         display: flex;
     }
 
-    /* .col-10 .flex-images-container .Images {
-        
-    } */
-
     .col-10 .flex-images-container .Soweto-text {
         margin-right: 2em;
     }
@@ -146,6 +143,10 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+
+    .city-image .image-city-class img {
+        width: 100%;
     }
 }
 
@@ -228,22 +229,26 @@
     }
 
     .city-image .text{
-        background-color: aqua;
         font-size: large;
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    .text-1 {
+    /* .text-1 {
         max-width: 160px;
+        margin-right: .5em;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    } */
+
+    .text-1 {
         margin-right: .5em;
         font-size: large;
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* .col-12 .lang, .lang-text{
-        font-size: large;
-        font-family: Arial, Helvetica, sans-serif;
-    } */
+    .city-image .image-city-class img {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
@@ -271,7 +276,7 @@
     }
 
     .sun-city-container .suncity-image {
-        max-width: 70px;
+        max-width: 100px;
     }
 
     .text {
@@ -280,7 +285,7 @@
     }
 
     .text-1 {
-        max-width: 180px;
+        max-width: 129px;
         margin-right: .5em;
         font-size: large;
         font-family: Arial, Helvetica, sans-serif;
@@ -317,7 +322,7 @@
     }
 
     .text-1 {
-        max-width: 180px;
+        max-width: 129px;
         margin-right: .5em;
         font-size: large;
         font-family: Arial, Helvetica, sans-serif;

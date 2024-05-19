@@ -127,13 +127,11 @@ body {
     }
 
     .profile-details .full-name {
-        /* margin-right: 7em; */
         justify-content: center;
     }
 
     .profile-details .profile-image img {
         max-width: 150%;
-        /* margin-left: 7em; */
     }  
     
     /* city section styles */
@@ -143,15 +141,21 @@ body {
         flex-wrap: wrap;
         flex-direction: row;
     }
-    
+
+    .city-name h2 {
+        text-align: center;
+        margin-top: 1em;
+    }
+
     .city-details .city-image img {
-        width: 250px; 
+        width: 100%;
         height: 100%;
     }
     
     .city-details .city-text {
-        width: 14em;
+        width: 100%;
         margin-left: auto; 
+        margin-top: .5em;
     }
 
     .historical-places-section {
